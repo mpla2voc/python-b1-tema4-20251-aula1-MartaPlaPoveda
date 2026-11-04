@@ -37,8 +37,11 @@ Exemple:
 
 
 def descending_list_iterator(numbers_list):
-    # Write here your code
-    pass
+    numbers_list.sort(reverse=True)
+    return numbers_list
+
+
+print(list(descending_list_iterator(numeros)))
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
