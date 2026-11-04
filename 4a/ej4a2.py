@@ -54,6 +54,7 @@ def count_fruits(fruits_list):
             
     return fruit_count
 
+
 print(count_fruits(fruits))
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
