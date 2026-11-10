@@ -82,7 +82,8 @@ class Shape:
 
     def get_sides(self):
         return self.sides
-    
+
+
 # Corret and overwrite class Triangle(Shape) here
 class Triangle():
     def __init__(self, sides, base, height):        
@@ -92,6 +93,7 @@ class Triangle():
 
     def get_area(self):
         return 0.5 * self.base * self.height
+
 
 # Corret and overwrite class Rectangle(Shape) here
 class Rectangle(Shape):
