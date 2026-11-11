@@ -52,34 +52,33 @@ Exemple:
      Sortida:
          "Guau!"
          "Meow!"
-         "Polly"        
+         "Whistle!"        
 """
 # Write abstract class Animal here
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def talk(self):
+        raise NotImplementedError("La subclase debe implementar el método abstracto")
+
 
 # Corret and overwrite class Dog(Animal) here 
-class Dog():
-    def __init__(self, name):
-        self.name = name
-
+class Dog(Animal):
     def talk(self):
-        pass
+        return "Guau!"
+
 
 # Corret and overwrite class Cat(Animal) here 
-class Cat():
-    def __init__(self, name):
-        self.name = name
+class Cat(Animal):
     def talk(self):
-        pass
+        return "Meow!"
+
 
 # Corret and overwrite class Parrot(Animal) here 
-class Parrot():
-    def __init__(self, name):
-        self.name = name
+class Parrot(Animal):
     def talk(self):
-        pass
-
-
-
+        return "Whistle!"
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
